@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="43px" height="44px" viewBox="0 0 43 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>tick</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="13 16 29 16 29 30 13 30"></polygon>
+    </defs>
+    <g id="HOMEPAGE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Business-energy-rollover" transform="translate(-246.000000, -2046.000000)">
+            <g id="tick" transform="translate(246.000000, 2046.000000)">
+                <ellipse id="Oval" fill="#33AA26" cx="21.5" cy="22" rx="21.5" ry="22"></ellipse>
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M18.5643135,30 C18.38014,30 18.2030969,29.9246231 18.0723146,29.7894832 L13.20363,24.7618463 C12.9319785,24.4811572 12.9321524,24.0265629 13.2039778,23.7464122 C13.4754555,23.4662615 13.9159762,23.466441 14.1876278,23.7467712 L18.5067484,28.2071074 L27.7611621,16.2693861 C28.0008138,15.9599821 28.438378,15.9095513 28.7388991,16.1573977 C29.0388984,16.4050645 29.0875939,16.8567873 28.8474205,17.1663708 L19.1074427,29.7306174 C18.9837908,29.8899857 18.800139,29.9876167 18.6027482,29.9989232 C18.5897047,29.9996411 18.5770091,30 18.5643135,30" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

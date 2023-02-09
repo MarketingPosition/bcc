@@ -1,0 +1,53 @@
+@import 'variables';
+
+.gfield_error{
+	background-color: white !important;
+	border: none !important;
+	color: $green;
+}
+
+.gfield_error .gfield_label{
+	color: #292929 !important;
+    font-weight: 500 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+/* Prepend the error message to the missing but required field */
+.gfield_error:before {
+	font-weight: bold;
+	content: "Sorry, this field is required: ";
+	color: $green;
+	padding-left: 5px;
+}
+/* Hide the error message since we're displaying it above */
+ .validation_message {
+    color: $green !important;
+    font-weight: 300 !important;
+    text-align: center;
+    padding-right: 0 !important;
+    padding-top: 5px !important;
+    margin: 0 !important;
+}
+
+.validation_error{
+    border: none !important;
+    color: #00a853 !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: none;
+}
+
+
+.gform_wrapper li.gfield_error input[type="email"],
+.gform_wrapper li.gfield_error select,
+.gform_wrapper li.gfield_error input[type="number"],
+.gform_wrapper li.gfield_error input[type="password"],
+.gform_wrapper li.gfield_error input[type="tel"],
+.gform_wrapper li.gfield_error input[type="text"],
+.gform_wrapper li.gfield_error input[type="url"],
+.gform_wrapper li.gfield_error textarea {
+border: 1px solid $green !important;
+}
+

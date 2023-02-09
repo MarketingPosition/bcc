@@ -1,0 +1,66 @@
+<?php
+/*
+ *
+ * API Webhook
+ *
+ */
+require_once ('../form/hook-leadbyte.php');
+
+/*
+ *
+ * Form to CRM
+ *
+ */
+//======================================================================
+// Fields - Page Specific, Cookies, Page Settings
+//======================================================================
+require_once ('../form/utm-data.php');
+
+$phone             = $_POST["phone"];
+$redirect_url      = $_POST["redirect_url"];
+
+//======================================================================
+// Custom Fields - Client Special Fields
+//======================================================================
+$phone_clean = str_replace(' ', '', $phone);
+
+$leadbyte = array (
+  "campid"      => "BUSINESS-ACCOUNTING",
+  "sid"         => "12",
+  "returnjson"  => "yes",
+);
+
+//======================================================================
+// Submission Body - Mapped to CRM fields
+//======================================================================
+
+$params = array(
+  "first_name"        => urldecode($_POST["first_name"]),
+  "last_name"         => urldecode($_POST["last_name"]),
+  "email"             => urldecode($_POST["email"]),
+  "company"           => urldecode($_POST["company"]),
+  "phone_1"           => urldecode($phone_clean),
+  "q1_needaccountant"     => urldecode($_POST["pay_1"]),
+  "q3_employees"     => urldecode($_POST["employees"]),
+  "q4_vatreg"     => urldecode($_POST["vat"]),
+  'q5_services'     => urldecode($_POST["q5_services"]),
+  'q2_businesstype'     => urldecode($_POST["business_type"]),
+  'q6_turnover'     => urldecode($_POST["q6_turnover"]),
+  'postcode'          => urldecode($_POST["postcode"]),
+  'paidsearch'		=> 'Yes',
+  'Redirect_URL'      => $redirect_url,
+  "utm_source"    	  => urldecode($_POST["USOURCE"]),
+  "utm_medium"    		=> urldecode($_POST["UMEDIUM"]),
+  "utm_campaign"  => urldecode($_POST["UCAMPAIGN"]),
+  "utm_content"   => urldecode($_POST["UCONTENT"]),
+  "utm_term"      => urldecode($_POST["UTERM"])
+);
+
+$full_param = array_merge($params,$utm_params,$leadbyte);
+
+//======================================================================
+// Submit to CRM
+//======================================================================
+//print_r($_POST);
+
+formSubmit($full_param);

@@ -1,0 +1,17 @@
+/* Framework */
+@import "bootstrap/bootstrap.scss";
+@import "mixins/flex";
+@import "mixins/extends";
+
+/* Design */
+@import "partials/main";
+@import "partials/header";
+@import "partials/hero";
+@import "partials/form";
+@import "partials/products";
+@import "partials/our-process";
+@import "partials/our-steps";
+@import "partials/text-image";
+@import "partials/waste";
+@import "partials/slider";
+@import "partials/footer";

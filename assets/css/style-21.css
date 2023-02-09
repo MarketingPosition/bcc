@@ -1,0 +1,66 @@
+.pform .tab {
+    height: auto !important;
+    margin-bottom: 30px;
+}
+
+.card-logo {
+    max-width: 475px;
+    margin: 13px auto 0px;
+}
+
+.logo-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo-box img {
+    max-width: 60px;
+}
+
+.partners-logo h4 {
+    font-size: 14px;
+    color: #949393;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.partners-logo hr {
+    margin: 10px 0px;
+}
+
+.partners-logo {
+    margin-top: 40px;
+}
+
+.p-logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.p-box img {
+    max-width: 100%;
+}
+
+.steps__item__title h2 {
+    margin-bottom: 8px;
+}
+
+.pform-card-payment .tab {
+    height: auto !important;
+}
+
+@media (max-width: 402px) {
+    .logo-box img {
+        max-width: 46px;
+    }
+}
+
+@media (min-width: 992px) {
+    .products__item {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}

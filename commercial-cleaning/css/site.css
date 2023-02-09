@@ -1,0 +1,208 @@
+.service-section h2 {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.features-box h3 {
+    font-size: 20px;
+    min-height: 50px;
+}
+.pform .pform-title {
+    max-width: 100%;
+}
+.features-box {
+    text-align: center;
+    background: #FFF;
+    padding: 40px 30px 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.11);
+    border-radius: 6px;
+    margin-bottom: 50px;
+    min-height: 213px;
+    border-bottom: 5px solid #1c2698;
+}
+
+section.service-section {
+    padding: 60px 0px 15px;
+}
+
+.steps__item {
+    margin: 0px 30px;
+}
+
+.steps__item:before {
+    content: "";
+    width: 127px;
+    height: 19px;
+    position: absolute;
+    background: url(../images/arrow-mid.png) no-repeat;
+    right: -133px;
+    top: 50%;
+    background-size: contain;
+}
+
+.steps__item:nth-child(3):before {
+    display: none;
+}
+
+.steps__item__content {
+    padding: 30px 10px;
+}
+
+.steps__item__title h2 {
+    font-size: 18px;
+    min-height: 50px;
+    margin-bottom: 7px;
+}
+
+.steps__item__content p {
+    max-width: 164px;
+    margin: 0px auto;
+}
+.steps__item__image {
+    height: 75px;
+    width: 75px;
+}
+
+
+.desktop_logo {
+    padding: 0 !important;
+    float: left;
+    width: 100%;
+}
+
+.pform .form-actions {
+    flex-wrap: wrap;
+}
+
+.act-btn {
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: inherit;
+}
+
+.pform .tab {
+    height: auto;
+}
+
+.desktop_logo h2 {
+    font-size: 21px;
+    padding-bottom: 0 !important;
+}
+
+.slick-slide {
+    min-height: 90px;
+    align-items: center;
+    display: flex !important;
+}
+
+
+
+
+
+
+@media (min-width:768px){
+
+.hero--energy {
+    background-image: url(../images/hero-bg.jpg);
+}
+.hero--energy:before {content: "";position: absolute;width: 100%;height: 100%;background: rgba(0,0,0,.5);left: 0;right: 0;top: 0;bottom: 0;}
+
+.hero--energy {
+    position: relative;
+}
+}
+
+
+@media (max-width:1200px){
+
+.steps__item {
+    margin: 0px auto 20px;
+    max-width: 330px;
+}
+
+.steps__item:before {
+    display: none;
+}
+
+	
+	
+}
+
+
+
+@media (max-width:991px){
+
+ 
+	
+}
+
+@media (max-width:767px){
+
+ .steps {
+    padding: 0px 0px;
+}
+
+.service-section h2 {
+    margin-bottom: 30px;
+}
+
+.features-box {
+    margin-bottom: 30px;
+    min-height: 154px;
+    padding: 30px 20px 10px;
+}
+
+section.service-section {
+    padding: 20px 0px 15px;
+}
+
+.h2, h2, .single-column h2{
+    font-size: 24px;
+}
+
+.pform {
+    margin-bottom: 40px;
+}
+
+.features-box h3 {
+    min-height: auto;
+    margin-bottom: 17px;
+}
+
+.logo_sm_section  h2 {
+    padding-bottom: 0 !important;
+}
+
+
+.our-usps {
+    padding-top: 0;
+}
+
+.steps__item__title h2 {
+    min-height: auto;
+}	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

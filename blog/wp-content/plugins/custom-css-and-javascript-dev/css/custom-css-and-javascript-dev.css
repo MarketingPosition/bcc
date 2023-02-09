@@ -1,0 +1,129 @@
+/**
+ * Author: Potent Plugins
+ * License: GNU General Public License version 2 or later
+ * License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
+ */
+#pp_custom_css_js_dev_page .nav-tab-new-file{
+	float: right;
+}
+#pp_custom_css_js_dev_page .nav-tab-file.unsaved {
+	font-style: italic;
+}
+#pp-custom-css-js-dev-delete-revisions-btn {
+	margin-top: 5px;
+}
+#pp_custom_css_js_dev_revisions {
+	margin-top: 5px;
+}
+#pp_custom_css_js_dev_revisions li {
+	white-space: nowrap;
+}
+#pp-custom-css-js-dev-editor-sidebar {
+	width: 225px; height: 100%; overflow: auto; float: right; padding: 0 20px;
+}
+#pp-custom-css-js-dev-editor-sidebar label {
+	display: block;
+}
+#pp-custom-css-js-dev-editor-buttons-bottom {
+	margin-right: 240px;
+}
+#pp-custom-css-js-dev-editor-sidebar .button-secondary {
+	margin-bottom: 5px;
+}
+#pp-custom-css-js-dev-iframe {
+	display: inline;
+	height: 1px;
+	width: 1px;
+	opacity: 0;
+}
+
+#pp_custom_css_js_dev_page.editor-expanded {
+	width: 100%;
+	box-sizing: border-box;
+	height: 100%;
+	z-index: 999999;
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#pp_custom_css_js_dev_page.editor-expanded .page-title,
+#pp_custom_css_js_dev_page.editor-expanded #pp-custom-css-js-dev-editor-sidebar {
+	display: none;
+}
+#pp_custom_css_js_dev_page.editor-expanded #pp-custom-css-js-dev-editor-buttons-bottom {
+	margin-right: 0;
+}
+#pp_custom_code_editor_dev .CodeMirror-matchingbracket {
+	color: #f00;
+	font-weight: bold;
+	background-color: #ccc;
+}
+
+#pp_custom_css_js_dev_loader_container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: table;
+	z-index: 2;
+	margin: 0;
+}
+#pp_custom_css_js_dev_loader {
+	display: table-cell;
+	vertical-align: middle;
+}
+#pp_custom_css_js_dev_loader_inner {
+	max-width: 550px;
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 40px;
+	background-color: #666;
+	color: #fff;
+	text-align: center;
+}
+#pp-ccjdev-loader-title, #pp-ccjdev-activate-title {
+	margin: 0;
+	color: #fff;
+	font-size: 22px;
+	line-height: 1.5em;
+	font-weight: bold;
+}
+#pp_custom_css_js_dev_loader  label {
+	display: block;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 16px;
+	line-height: 1.5em;
+}
+#pp_custom_css_js_dev_loader input {
+	width: 100%;
+	margin-top: 10px;
+	font-size: 18px;
+}
+#pp_custom_css_js_dev_loader button {
+	font-size: 18px;
+}
+#pp_custom_css_js_dev_loader .loader {
+	margin-right: 5px;
+	vertical-align: bottom;
+}
+#pp_custom_css_js_dev_license_key_error {
+	background-color: #c00;
+	color: #fff;
+	margin-top: 20px;
+	padding: 10px;
+}
+#pp_custom_css_js_dev_license_key_success {
+	background-color: #0c0;
+	color: #fff;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+#ppccjd_post_css, #ppccjd_post_javascript {
+	display: none;
+}

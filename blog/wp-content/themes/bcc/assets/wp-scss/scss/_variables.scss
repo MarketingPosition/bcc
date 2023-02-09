@@ -1,0 +1,214 @@
+@mixin breakpoint($point) {
+  @if $point == m {
+    @media only screen and (max-width: 991px) {
+      @content;
+    }
+  } @else {
+    @media only screen and (min-width: 992px) {
+      @content;
+    }
+  }
+}
+
+@mixin break($point) {
+  @if $point == sm {
+    @media only screen and (min-width: 576px) {
+      @content;
+    }
+  } @else if $point == md {
+    @media only screen and (min-width: 768px) {
+      @content;
+    }
+  } @else if $point == lg {
+    @media only screen and (min-width: 992px) {
+      @content;
+    }
+  } @else if $point == xl {
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
+  }
+}
+
+/* Light 300, Regular 400, Bold 700 */
+
+$font-stack: "Open Sans", Arial, sans-serif;
+$text-color: #292929;
+
+/* Colors */
+
+$green: #00a853;
+$blue: #04267a;
+$grey: #000;
+
+/* General */
+
+$primary: $green;
+$btn-hover: darken($primary, 5%);
+$padding: 6em;
+
+$amount: 10%;
+
+/* Typography */
+
+/* Spacing */
+
+.width-500 {
+  max-width: 500px;
+}
+
+body {
+  font-family: $font-stack;
+  color: $text-color;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 34px;
+  margin-bottom: 0.5em;
+  @include break(lg) {
+    font-size: 48px;
+    line-height: 60px;
+  }
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 300;
+  width: 100%;
+  @include break(lg) {
+    font-size: 30px;
+    margin-bottom: 1rem;
+  }
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 300 !important;
+  @include break(lg) {
+    font-size: 22px;
+  }
+}
+
+.subhead {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 0.5em;
+  @include break(lg) {
+    font-size: 24px;
+    margin: 30px 0px 40px;
+  }
+}
+
+/* Classes And Mixins Start Here */
+
+@mixin bullets {
+  .bullets {
+    padding: 20px 0;
+
+    ul {
+      list-style-type: none;
+      padding-left: 10px;
+      line-height: 42px;
+
+      li {
+        border-bottom: 1px solid #e9e7e7;
+
+        &:before {
+          content: "\f00c";
+          font-weight: 600;
+          font-family: "Font Awesome 5 Free";
+          color: $green;
+          position: relative;
+          left: -8px;
+        }
+      }
+    }
+  }
+}
+
+.usp {
+  list-style-type: none;
+  padding-left: 10px;
+  line-height: 30px;
+  font-size: 16px;
+  color: #fff;
+
+  li {
+    &:before {
+      content: "+";
+      font-weight: 600;
+      font-family: "Font Awesome 5 Free";
+      color: $green;
+      position: relative;
+      left: -8px;
+    }
+  }
+}
+
+@mixin child1 {
+  &:before {
+    content: "";
+    background-image: url("<?php echo $domain;?>/wp-content/uploads/2019/03/waste-energy.png");
+    background-color: $green;
+    background-size: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    top: 0;
+  }
+}
+@mixin child2 {
+  &:before {
+    content: "";
+    background-image: url("<?php echo $domain;?>/wp-content/uploads/2019/03/business-waste.png");
+    background-color: $blue;
+    background-size: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    top: 70px;
+  }
+}
+
+@mixin child3 {
+  &:before {
+    content: "";
+    background-color: $green;
+    background-image: url("<?php echo $domain;?>/wp-content/uploads/2019/03/card-services.png");
+    background-size: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    top: 140px;
+  }
+}
+
+@mixin child4 {
+  &:before {
+    content: "";
+    background-color: $blue;
+    background-image: url("<?php echo $domain;?>/wp-content/uploads/2019/03/marketing.png");
+    background-size: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    top: 210px;
+  }
+}

@@ -1,0 +1,764 @@
+.page-id-1135 .mega-menu-item-330,
+.page-id-1135 .mega-menu-item-861,
+.page-id-1135 .mega-menu-item-863,
+.page-id-1135 .mega-menu-item-369,
+.page-id-1135 .mega-menu-item-1358,
+.page-id-1135 .mega-menu-item-1387,
+.page-id-1135 #mega-toggle-block-2 {
+  visibility: hidden !important;
+}
+.omnes {
+  font-family: omnes-pro, sans-serif;
+  font-weight: 700 !important;
+  font-size: 40px !important;
+  color: #03267a;
+}
+@media only screen and (max-width: 767px) {
+  .omnes {
+    font-size: 28px !important;
+  }
+}
+.highlight {
+  color: #00a853;
+}
+.bullet_points {
+  list-style-type: none;
+  line-height: 2em;
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #02267a;
+}
+@media only screen and (max-width: 767px) {
+  .bullet_points {
+    font-size: 18px;
+  }
+}
+.bullet_points li {
+  padding-left: 10px;
+}
+.bullet_points li:before {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  left: 15px;
+  color: #01a853;
+}
+.highlight_orange {
+  color: #ff5f0a;
+}
+@media only screen and (min-width: 982px) {
+  .form-ab {
+    background-image: linear-gradient(to right, #f8f8f8, #f8f8f8 50%, #eee 50%);
+  }
+}
+@media only screen and (max-width: 982px) {
+  .form-ab {
+    background-color: #f8f8f8;
+  }
+}
+.form-ab ::placeholder {
+  color: #abaaaa;
+}
+.form-ab .col1,
+.form-ab .col2 {
+  padding: 100px 0;
+}
+.form-ab .col1 {
+  padding: 100px 60px 100px 0;
+}
+@media only screen and (max-width: 992px) {
+  .form-ab .col1 {
+    padding: 40px 2px 0;
+  }
+}
+.form-ab .col2 {
+  padding: 100px 0 100px 60px;
+}
+@media only screen and (max-width: 981px) {
+  .form-ab .col2 {
+    padding: 0 0 60px;
+    background-color: #f8f8f8 !important;
+  }
+}
+.form-ab .title {
+  padding: 0 15px;
+}
+.form-ab .title h1 {
+  font-size: 36px;
+  font-weight: 100;
+}
+.form-ab .step-lead-action {
+  display: none;
+}
+.form-ab .step-lead-action-submit {
+  width: 100%;
+  margin: 30px 0;
+}
+.form-ab .step-lead-action-submit button {
+  width: 95%;
+  cursor: pointer;
+  float: unset !important;
+}
+.form-ab .step-lead-action-submit button:focus {
+  border: none;
+  outline: none;
+}
+.form-ab .step-lead-row {
+  background-color: unset;
+}
+.form-ab .step-lead-radio {
+  padding-left: 0;
+  max-width: 150px;
+  max-height: 100px;
+}
+.form-ab .step-lead-item {
+  display: block !important;
+  padding: 20px 0 !important;
+}
+.form-ab .step-lead-item .row {
+  padding: 0 15px;
+}
+.form-ab .step-lead-input {
+  background-color: unset !important;
+}
+.form-ab .step-lead-input input {
+  height: 55px !important;
+  border: 1px solid #e1e1e1 !important;
+  background-color: #fff;
+  margin-top: 15px;
+}
+.form-ab .question_title {
+  text-align: left;
+  width: 400px;
+  font-weight: 600;
+}
+.form-ab .field_label {
+  color: #00a853;
+  text-align: left;
+}
+.form-ab .show_more {
+  text-align: left;
+  padding-top: 25px;
+}
+.form-ab .show_more a {
+  color: #00a853;
+  text-decoration: underline;
+}
+.form-ab .show_more a:hover {
+  color: #00753a;
+}
+.form-ab .banner {
+  position: sticky;
+  top: 130px;
+}
+@media only screen and (min-width: 767px) {
+  .form-ab .banner:before {
+    background-image: url(<?php echo $domain;?>/wp-content/uploads/2019/04/beat-any-quote-badge.png);
+    background-size: 120px 120px;
+    width: 120px;
+    height: 120px;
+    top: -70px;
+    right: -60px;
+    content: "";
+    position: absolute;
+  }
+}
+.form-ab .banner_top {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+.form-ab .banner_top p {
+  margin-bottom: 10px;
+}
+.form-ab .banner_top p a {
+  color: #252525;
+  text-decoration: none;
+}
+.form-ab .banner_top p:nth-child(1) {
+  color: #4d4d4d;
+  font-size: 22px;
+}
+.form-ab .banner_top p:nth-child(2) {
+  font-size: 33px;
+  font-weight: 300;
+  font-style: italic;
+}
+.form-ab .banner_top p:nth-child(2) a {
+  color: #00a853;
+}
+.form-ab .trust {
+  background-color: #00a853;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+.form-ab .trust:before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 25px 35px 0 0;
+  border-color: #00a853 transparent transparent transparent;
+  position: absolute;
+  margin-top: 85px;
+  left: 90px;
+}
+.form-ab .trust a:hover {
+  text-decoration: none;
+}
+#nrg_step1 .step-lead-radio {
+  height: 80px;
+}
+#nrg_step1 .step-lead-radio span {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#nrg_step1 .step-lead-radio:first-child img {
+  content: url("<?php echo $domain;?>/wp-content/uploads/2019/06/flame.png");
+}
+#nrg_step1 .step-lead-radio:last-child img {
+  content: url("<?php echo $domain;?>/wp-content/uploads/2019/06/bolt.png");
+}
+.page-template-page-business-energy-quoter-A-B ul.checked-list {
+  padding-left: 50px;
+  list-style: none;
+  line-height: 1.4;
+}
+.page-template-page-business-energy-quoter-A-B ul.checked-list li {
+  position: relative;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.page-template-page-business-energy-quoter-A-B ul.checked-list li:before {
+  content: "\f00c";
+  font-family: FontAwesome;
+  color: #fff;
+  font-size: 10px;
+  padding: 5px 7px;
+  background: #00a853;
+  border-radius: 50%;
+  top: 0;
+  left: -50px;
+  position: absolute;
+}
+.page-template-page-business-energy-quoter-A-B
+  ul.checked-list.has-title
+  li:before {
+  top: 10px;
+}
+.page-template-page-business-energy-quoter-A-B ul.checked-list li .title {
+  font-size: 20px;
+  color: #00a853;
+  margin-bottom: 5px;
+}
+.page-template-page-business-energy-quoter-A-B .native-form {
+  background-image: unset !important;
+}
+.page-template-page-business-energy-quoter-A-B
+  .native-form
+  #nrg_quoteform
+  .container {
+  padding: 0;
+}
+.page-template-page-business-energy-quoter-A-B
+  .native-form
+  .quote-2
+  .bullet-holder {
+  padding: 0;
+}
+.page-template-page-business-energy-quoter-A-B
+  .native-form
+  .quote-2
+  .bullet-holder
+  h1 {
+  font-size: 1.25em;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+.page-template-page-business-energy-quoter-A-B .native-form .step-lead-header {
+  position: relative;
+  border-radius: 0;
+  margin-top: 30px;
+}
+.page-template-page-business-energy-quoter-A-B
+  .native-form
+  .step-lead-header
+  p {
+  display: none;
+}
+.page-template-page-business-energy-quoter-A-B
+  .native-form
+  .step-lead-position-item.step-active {
+  background-color: #00a853;
+}
+.page-template-page-business-energy-quoter-A-B
+  .native-form
+  #nrg_step1
+  .step-lead-action
+  .step-lead-btn.next-btn {
+  float: none;
+}
+.page-template-page-business-energy-quoter-A-B .native-form .step-lead-row {
+  border-radius: 0;
+  padding-bottom: 15px;
+}
+.page-template-page-business-energy-quoter-A-B .supplier-logos-banner {
+  padding: 3em 0;
+}
+.page-template-page-business-energy-quoter-A-B
+  .supplier-logos-banner
+  .supplier-logos-wrapper {
+  overflow-x: auto;
+}
+.page-template-page-business-energy-quoter-A-B .why-switch-tariffs {
+  padding: 3em 0;
+}
+.page-template-page-business-energy-quoter-A-B
+  .why-switch-tariffs
+  .reasons-to-switch
+  h2 {
+  margin-bottom: 1.5em;
+}
+.page-template-page-business-energy-quoter-A-B .trust-pilot-widget {
+  background-color: #fff;
+  text-align: center;
+  border: 1px solid #eee;
+}
+.page-template-page-business-energy-quoter-A-B .trust-pilot-widget .header {
+  padding: 1em 3em;
+}
+.page-template-page-business-energy-quoter-A-B
+  .trust-pilot-widget
+  .review-slides {
+  position: relative;
+  margin: auto;
+  padding: 0 0.5em 2em 0.5em;
+}
+.page-template-page-business-energy-quoter-A-B
+  .trust-pilot-widget
+  .review-slides
+  .slide {
+  display: none;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.page-template-page-business-energy-quoter-A-B
+  .trust-pilot-widget
+  .review-slides
+  .slide
+  .quote {
+  font-style: italic;
+  font-size: 19px;
+  height: 130px;
+}
+.page-template-page-business-energy-quoter-A-B
+  .trust-pilot-widget
+  .review-slides
+  .slide
+  .quote.big-quote {
+  font-size: 18px;
+}
+.page-template-page-business-energy-quoter-A-B
+  .trust-pilot-widget
+  .review-slides
+  .slide
+  .reviewer {
+  display: block;
+  margin-bottom: 30px;
+  color: #00a853;
+}
+.page-template-page-business-energy-quoter-A-B
+  .trust-pilot-widget
+  .review-slides
+  .dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  -o-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+.page-template-page-business-energy-quoter-A-B
+  .trust-pilot-widget
+  .review-slides
+  .dot.active {
+  background-color: #00a853;
+  border: 1px solid #00a853;
+}
+.page-template-page-business-energy-quoter-A-B .trust-pilot-widget .footer {
+  background-color: #499b49;
+  padding: 2em 3em;
+  color: #fff;
+}
+.page-template-page-business-energy-quoter-A-B
+  .trust-pilot-widget
+  .footer
+  .stars {
+  margin: 10px 0 8px 0;
+}
+.page-template-page-business-energy-quoter-A-B
+  .trust-pilot-widget
+  .footer
+  .stars
+  .star {
+  display: inline-block;
+  padding: 1px 5px;
+  background: #3c8348;
+}
+.page-template-page-business-energy-quoter-A-B .energy-saving-faqs {
+  padding: 3em 0;
+  margin-bottom: 60px;
+}
+.page-template-page-business-energy-quoter-A-B .energy-saving-faqs h2 {
+  display: block;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #eee;
+}
+.page-template-page-business-energy-quoter-A-B
+  .energy-saving-faqs
+  .faqs-accordion-block
+  .accordion {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  width: 100%;
+  text-align: left;
+  background-color: #fff;
+  padding: 10px 0;
+}
+.page-template-page-business-energy-quoter-A-B
+  .energy-saving-faqs
+  .faqs-accordion-block
+  .accordion
+  h3 {
+  display: inline-block;
+  font-size: 1.25em;
+  color: #00a853;
+  max-width: 80%;
+}
+.page-template-page-business-energy-quoter-A-B
+  .energy-saving-faqs
+  .faqs-accordion-block
+  .accordion
+  .icon {
+  display: inline-block;
+  position: relative;
+  background-color: #00a853;
+  color: #fff;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+.page-template-page-business-energy-quoter-A-B
+  .energy-saving-faqs
+  .faqs-accordion-block
+  .accordion
+  .icon:before {
+  content: "+";
+  position: absolute;
+  font-size: 20px;
+  top: 2px;
+  left: 12px;
+}
+.page-template-page-business-energy-quoter-A-B
+  .energy-saving-faqs
+  .faqs-accordion-block
+  .accordion.active
+  .icon {
+  background-color: #000b69;
+}
+.page-template-page-business-energy-quoter-A-B
+  .energy-saving-faqs
+  .faqs-accordion-block
+  .accordion.active
+  .icon:before {
+  content: "-";
+  top: -4px;
+  left: 14px;
+  font-size: 26px;
+}
+.page-template-page-business-energy-quoter-A-B
+  .energy-saving-faqs
+  .faqs-accordion-block
+  .accordion:hover
+  .icon {
+  background-color: #000b69;
+}
+.page-template-page-business-energy-quoter-A-B
+  .energy-saving-faqs
+  .faqs-accordion-block
+  .panel {
+  display: none;
+  padding: 0 60px 15px 0;
+  background-color: #fff;
+  overflow: hidden;
+  text-align: left;
+}
+.page-template-page-business-energy-quoter-A-B
+  .energy-saving-faqs
+  .faqs-accordion-block
+  .panel
+  p {
+  font-size: 16px;
+}
+.page-template-page-business-energy-quoter-A-B
+  .energy-saving-faqs
+  .faqs-accordion-block
+  .panel
+  a {
+  color: #00a853;
+  text-decoration: underline;
+}
+.page-template-page-business-energy-quoter-A-B
+  .energy-saving-faqs
+  .faqs-accordion-block
+  .accordion-block {
+  border-bottom: 1px solid #eee;
+}
+.page-template-page-business-energy-quoter-A-B
+  .energy-saving-faqs
+  .faqs-accordion-block
+  .accordion.active
+  + .panel {
+  display: block !important;
+}
+.page-template-page-business-energy-quoter-A-B .bottom-energy-cta-banner {
+  padding: 6em 0;
+  background-image: url("<?php echo $domain;?>/wp-content/uploads/2019/04/bottom-cta-banner-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+.page-template-page-business-energy-quoter-A-B
+  .bottom-energy-cta-banner
+  .text-overlay {
+  text-align: center;
+}
+.page-template-page-business-energy-quoter-A-B
+  .bottom-energy-cta-banner
+  .text-overlay
+  h3 {
+  max-width: 580px;
+  color: #fff;
+  margin: 0 auto 30px auto;
+  font-size: 3em;
+}
+@media only screen and (max-width: 992px) {
+  .page-template-page-business-energy-quoter-A-B
+    .bottom-energy-cta-banner
+    .text-overlay
+    h3 {
+    font-size: 2em;
+  }
+}
+.page-template-page-business-energy-quoter-A-B
+  .bottom-energy-cta-banner
+  .text-overlay
+  .btn {
+  font-size: 16px;
+  padding: 1.25em 4.5em;
+  border-radius: 60px;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (min-width: 768px) {
+  .page-id-1135 .native-form .quote-2 .bullet-holder ul li {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .page-id-1135
+    .native-form
+    #nrg_step1
+    .step-lead-action
+    .step-lead-btn.next-btn {
+    padding: 1.5em 5em;
+  }
+  .page-id-1135 .trust-pilot-widget-bg {
+    background-image: url("<?php echo $domain;?>/wp-content/uploads/2019/04/trust-pilot-widget-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: 4em;
+  }
+  .page-id-1135 .trust-pilot-widget {
+    border: 0;
+  }
+  .page-id-1135 .trust-pilot-widget .review-slides {
+    padding: 0 3em 2em 3em;
+  }
+  .page-id-1135 .trust-pilot-widget .review-slides .slide .quote {
+    font-size: 26px;
+  }
+  .page-id-1135 .trust-pilot-widget .review-slides .slide .quote.big-quote {
+    font-size: 20px;
+  }
+  .page-id-1135 .energy-saving-faqs .faqs-accordion-block .accordion h3 {
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 992px) {
+  .page-id-1135 .native-form .quote-2 .bullet-holder h1 {
+    font-size: 1.45em;
+    max-width: 400px;
+  }
+  .page-id-1135 .native-form .step-lead-header {
+    margin-top: 0;
+  }
+  .page-id-1135 .native-form .step-lead-header h1 {
+    padding: 0 2.5em;
+  }
+  .page-id-1135 .native-form .step-lead-header:before {
+    background-image: url("<?php echo $domain;?>/wp-content/uploads/2019/04/beat-any-quote-badge.png");
+    background-size: 120px 120px;
+    width: 120px;
+    height: 120px;
+    top: -60px;
+    right: -55px;
+    content: "";
+    left: auto;
+    background-color: transparent;
+  }
+  .page-id-1135
+    .native-form
+    #nrg_step1
+    .step-lead-action
+    .step-lead-btn.next-btn {
+    padding: 1.5em 5em;
+  }
+  .page-id-1135 .supplier-logos-banner .supplier-logos-wrapper img {
+    max-width: 100%;
+    height: auto;
+  }
+  .page-id-1135 .trust-pilot-widget .review-slides .slide .quote {
+    height: 125px;
+  }
+  .page-id-1135 .why-switch-tariffs .reasons-to-switch {
+    padding: 3em;
+  }
+  .page-id-1135 .bottom-energy-cta-banner {
+    padding: 10em 0;
+  }
+}
+.page-id-1395 .bottom-energy-cta-banner {
+  background-image: url("https://businesscostcomparison.com/wp-content/uploads/2019/10/commercial-hero.jpg");
+}
+.btn-grey {
+  background: #00a853 none repeat scroll 0 0 !important;
+  color: #fff !important;
+}
+.page-id-797 .native-form {
+  background-image: url("<?php echo $domain;?>/wp-content/uploads/2018/10/ball-bright-close-up-207489.jpg");
+}
+.elementor-text-editor h2 {
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 767px) {
+  .page-id-264 .thank-you-content br {
+    display: none;
+  }
+}
+.page-template-page-business-energy-quoter .step-lead-header:before {
+  background-image: url("<?php echo $domain;?>/wp-content/uploads/2019/02/quote-sticker.png");
+  content: " ";
+  background-size: 80px 80px;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 14px;
+  right: 10px;
+}
+.page-id-849 .native-form {
+  background-image: url("<?php echo $domain;?>/wp-content/uploads/2019/03/rawmarketing.jpg");
+}
+.page-id-1411 #quoteform {
+  background-image: url("https://businesscostcomparison.com/wp-content/uploads/2019/10/commercial-hero.jpg");
+}
+.page-id-1411 .bottom-energy-cta-banner {
+  background-image: url("https://businesscostcomparison.com/wp-content/uploads/2019/10/commercial-footer.jpg") !important;
+}
+.page-id-1361 .native-form {
+  background-image: url("<?php echo $domain;?>/wp-content/uploads/2020/01/hero-bcc1.jpg") !important;
+}
+.page-id-1361 .native-form.native-form .step-lead-holder,
+.page-id-854 .native-form.native-form .step-lead-holder {
+  max-width: 770px;
+  margin: unset !important;
+}
+@media (min-width: 768px) {
+  .page-id-1361 .native-form .form-holder,
+  .page-id-854 .native-form .form-holder {
+    padding: 70px 0 !important;
+  }
+  .page-id-854 .native-form .form-holder {
+    max-width: 650px;
+  }
+}
+.page-id-854 .native-form {
+  background-image: url("<?php echo $domain;?>/wp-content/uploads/2020/01/business-load-hero.jpg");
+}
+.page-id-854 .step-lead-header h1 {
+  max-width: 400px;
+  margin: auto;
+  line-height: 1.2em;
+  margin: auto;
+  line-height: 1.3em;
+  padding: 15px;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 24px;
+  max-width: 400px;
+  transform: rotate(0deg);
+  margin-bottom: 20px;
+}
+.page-id-854 .step-lead-header h1:before {
+  content: "";
+  position: absolute;
+  background: #17277a;
+  top: 0;
+  right: 5px;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transform: rotate(-2deg);
+  transition: all 0.5s ease-in-out;
+}
+.page-id-854 .quote-form-lead-text {
+  max-width: 500px;
+}

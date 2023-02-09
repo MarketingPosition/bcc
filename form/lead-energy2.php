@@ -1,0 +1,86 @@
+<?php
+/*
+ *
+ * API Webhook
+ *
+ */
+require_once ('../form/hook-json.php');
+
+/*
+ *
+ * Form to CRM
+ *
+ */
+//======================================================================
+// Fields - Generic
+//======================================================================
+
+$id            = '';
+$firstname     = $_POST["first_name"];
+$lastname      = $_POST["last_name"];
+$email         = $_POST["email"];
+$phone         = urldecode($_POST["phone"]);
+$postcode      = $_POST["postcode"];
+$company       = $_POST["company"];
+$renewal_dd    = $_POST["renewal_dd"];
+$renewal_mm    = $_POST["renewal_mm"];
+$renewal_yyyy  = $_POST["renewal_yy"];
+$energy_type   = $_POST["energy_type"];
+$supplier      = $_POST["supplier"];
+$bill          = $_POST["bill"];
+$business_type = $_POST["business_type"];
+
+//======================================================================
+// Fields - Page Specific, Cookies, Page Settings
+//======================================================================
+require_once ('../form/utm-data.php');
+
+$redirect_url = $_POST["redirect_url"];
+
+
+//======================================================================
+// Custom Fields - Client Special Fields
+//======================================================================
+$phone_clean = str_replace(' ', '', $phone);
+$renewal_date = '';
+
+if($renewal_dd){
+  $renewal_create = date_create();
+  $renewal_date_set = date_date_set($renewal_create, $renewal_yyyy, $renewal_mm, $renewal_dd);
+  $renewal_date = $renewal_date_set->format('d/m/Y');
+}
+
+//======================================================================
+// Submission Body - Mapped to CRM fields
+//======================================================================
+
+$params = array(
+  "key"               => "57755aac3e98a96327ca2dfddb076928",
+  "lead"              => array(
+    "sid"               => "13",
+    "campid"            => "ENERGY-SERVICES-CAMP",
+    "firstname"         => $firstname,
+    "lastname"          => $lastname,
+    "email"             => $email,
+    "company"           => $company,
+    "phone1"            => $phone_clean,
+    "postcode"          => $postcode,
+    "nrg_contract_date" => $renewal_date,
+    "nrg_question1"     => $energy_type,
+    "nrg_question2"     => $supplier,
+    "nrg_bill"          => $bill,
+    "businesstype"      => $business_type
+  ),
+  'Redirect_URL'      => $redirect_url
+);
+
+$full_param = array_merge($params,$utm_params);
+
+//======================================================================
+// Submit to CRM
+//======================================================================
+//$json = json_encode($full_param);
+//print_r($json);
+//print_r($_POST);
+
+jsonPost($full_param);

@@ -1,0 +1,22 @@
+------------------------------------------------------------------------------------------------------------------
+Version 1.2.0 
+	- Rename plugin folder and files and remove unnecessary files.
+	- Remove datedropper footer buttons.
+	- Fixed an issue on datedropper not working on form editor page when No-Conflict Mode is turned on.
+	- Changes theme color settings option from a drop-down to a color picker. 
+	- Added support to placeholder settings.
+	- Added functionality to automatically close datedropper when a date is clicked.
+	- Added option to make the backward & forward arrow on the day, month and year always visible. 
+	- Added option to set the default date by adding/subtracting a number of days to the current_date variable. 
+	- Added option to set the minimum/maximum year by adding/subtracting a number of years to the current_year variable.
+
+------------------------------------------------------------------------------------------------------------------
+Version 1.1.0
+	- Added support to conditional logic.
+	- Fixed an issue on datedropper not working on ajax enable multi-page form.
+
+------------------------------------------------------------------------------------------------------------------
+Version 1.0.0 
+	- Initial release.
+
+------------------------------------------------------------------------------------------------------------------

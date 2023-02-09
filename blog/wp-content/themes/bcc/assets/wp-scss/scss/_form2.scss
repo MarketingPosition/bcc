@@ -1,0 +1,428 @@
+@import 'variables';
+
+//
+
+@mixin input {
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+
+  &:focus {
+    border: 1px solid $green;
+  }
+}
+
+//
+
+%btn {
+  background-color: $primary;
+  border-radius: 25px;
+  color: #ffffff;
+  display: inline-block;
+  text-align: center;
+  padding: 1.25em 2em;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 1;
+  outline: none;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+
+  &:hover {
+    background-color: darken($primary, 5%);
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
+
+@mixin steps {
+  .gf_page_steps {
+    border: none;
+
+    .gf_step {
+      width: 20%;
+      margin: 0;
+      background-color: #f6f6f6;
+      opacity: 1;
+      height: auto;
+      padding: 4px;
+      text-align: center;
+      display: inline-block;
+
+      .gf_step_number {
+        display: none;
+      }
+
+      .gf_step_label {
+        font-size: 14px;
+        color: #4c4c4c;
+        font-weight: 600;
+        text-transform: uppercase;
+        line-height: 1.929;
+      }
+    }
+
+    .gf_step_active {
+      background-color: #04267a;
+
+      .gf_step_label {
+        color: #ffffff !important;
+      }
+    }
+
+    #gf_step_1_5,
+    #gf_step_2_5 {
+      display: none !important;
+    }
+  }
+}
+
+@mixin body {
+  .gform_body {
+    padding: 20px;
+    @include breakpoint(m) {
+      padding: 10px;
+    }
+
+    .gfield {
+      text-align: center;
+
+      .gfield_label {
+        font-size: 18px;
+        font-weight: 400;
+      }
+
+      .ginput_container {
+        ul {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+
+          li {
+            flex: 0 0 33.33%;
+
+            input {
+              display: none;
+
+              & + label {
+                border: 3px solid #eeeeee;
+                width: 100%;
+                font-weight: 300;
+                font-size: 16px;
+                color: #292929;
+                padding: 15px 0;
+              }
+
+              &:checked + label {
+                border: 3px solid $green;
+              }
+            }
+          }
+        }
+      }
+    }
+    // Radio Buttons Energy Form Page
+
+    .radio_energy {
+      .gfield_radio {
+        li {
+          -webkit-box-flex: 0 !important;
+          -ms-flex: 0 0 25% !important;
+          flex: 0 0 25% !important;
+          @include breakpoint(m) {
+            flex: 0 0 50% !important;
+          }
+        }
+      }
+    }
+    // Other Suppliers
+    .supplier {
+      .gfield_label {}
+
+      .ginput_container {
+        select {
+          width: 100%;
+          height: 40px;
+          cursor: pointer;
+          border: 3px solid #eeeeee;
+        }
+      }
+    }
+    // DOB Field
+    .dob {
+      .ginput_container_date {
+        margin-top: 0;
+
+        .clear-multi {
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+
+          div {
+            width: 100%;
+
+            select {
+              width: 100%;
+              height: 40px;
+              cursor: pointer;
+              border: 3px solid #eeeeee;
+            }
+          }
+        }
+      }
+    }
+    // DOB ENDS HERE
+    // How much is your bill usually
+    .bill {
+      .gfield_label {}
+
+      .ginput_container {
+        input {
+          @include input;
+
+          &:focus {
+            border: 1px solid $green;
+          }
+        }
+      }
+    }
+    // Bill ends Here
+    // Postcode
+    .postcode {
+      .gfield_label {}
+
+      .ginput_container {
+        input {
+          @include input;
+        }
+      }
+    }
+    // Postcode ends here
+    //Append to title step 1
+    #field_1_1 {
+      .gfield_label {
+        &:after {
+          content: ' (Choose all that apply)';
+          font-size: 14px;
+        }
+      }
+    }
+    //Email Field
+    #field_1_7 {
+      label {
+        font-size: 14px;
+      }
+
+      .ginput_container {
+        input {
+          width: 77%;
+          outline: none;
+          border: 2px solid #d5d5d5;
+        }
+      }
+    }
+    //Email Field Title
+    #field_1_8 {
+      .email-title {
+        font-size: 18px;
+      }
+    }
+    //Good news title
+    .good-news {
+      font-size: 22px;
+      color: $green;
+      font-weight: 300;
+      margin-bottom: 10px;
+    }
+    //Good news subtitle
+    .news-subtitle {
+      font-size: 16px;
+      font-weight: 400;
+    }
+    //step 5
+    .ginput_complex {
+      margin-bottom: -20px;
+
+      span {
+        label {
+          font-size: 14px;
+          font-weight: 400;
+          margin-bottom: 0.8rem;
+        }
+
+        input {
+          height: 45px;
+          border: 2px solid #d5d5d5;
+        }
+      }
+    }
+    // Form Fields
+
+    .ginput_container {
+      input {
+        height: 45px;
+        border: 2px solid #d5d5d5;
+        padding-left: 10px;
+      }
+    }
+  }
+}
+
+@mixin footer {
+  .gform_page_footer {
+    text-align: center;
+    border: none;
+
+    .gform_next_button {
+      @extend %btn;
+    }
+
+    .gform_previous_button {
+      @extend %btn;
+    }
+
+    .gform_button {
+      @extend %btn;
+    }
+
+    #gform_previous_button_1,
+    #gform_previous_button_1_9,
+    #gform_previous_button_3 {
+      display: none;
+    }
+  }
+}
+
+.page-id-504,
+.page-id-731 {
+  .native-form {
+    background-image: url("/wp-content/themes/bcc/assets/images/energybg3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+
+    .form-holder {
+      padding: 30px 0;
+    }
+  }
+}
+
+.quote-2 {
+  &-row {
+    h1 {
+      margin-top: 60px;
+      color: white;
+      font-weight: 300;
+      font-size: 40px;
+    }
+  }
+}
+
+.form-wrapper {
+  background-color: #ffffff;
+  border-radius: 4px;
+  @media only screen and (max-width: 980px) {
+    box-shadow: 0 10px 30px 5px rgba(194, 194, 194, 0.44);
+  }
+
+  .form-title {
+    font-size: 28px;
+    font-weight: 300;
+    padding: 20px 0 10px;
+
+    .highlight {
+      color: $green;
+    }
+  }
+
+  #gform_1,
+  #gform_2,
+  #gform_3 {
+    @include steps;
+    @include body;
+    @include footer;
+  }
+}
+
+.highlight {
+  color: $green;
+}
+
+/*-------Temporary CSS -------*/
+
+@media (max-width: 566px) {
+  .page-id-504 section.why-choose-us .my-bullets .block {
+    padding: 15px 0 15px !important;
+  }
+}
+
+.page-id-504 section.why-choose-us .my-bullets .block {
+  padding: 0 0 15px;
+}
+
+.quote-2-title {
+  background-color: #eee;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 0;
+}
+
+.page-id-504 section.why-choose-us .my-bullets .block:nth-child(even) {
+  background-color: white !important;
+}
+
+.postid-514 .native-form {
+  background-image: none;
+}
+
+.postid-514 .native-form .step-lead-holder {
+  border: 3px solid #eee;
+}
+
+/*---------Bullets-----------*/
+.bullet-holder {
+  padding: 70px 0;
+  //margin-top: 70px;
+  font-size: 24px;
+  border-radius: 5px;
+  text-align: left;
+  line-height: 2em;
+  color: #ffffff;
+
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+
+    li {
+      &:before {
+        content: '\25A0';
+        color: #51d291;
+        padding-right: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .bullet-holder .list-group {
+    padding-left: 5px;
+  }
+
+  .bullet-holder {
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 22px;
+  }
+
+  .quote-2-title {
+    padding-top: 30px;
+  }
+}
+/*--------------Bullets Section---------------*/
+
+.gform_wrapper {
+  display: block !important;
+}

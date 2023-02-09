@@ -1,0 +1,184 @@
+.multistep{
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 25px;
+	max-width: 560px;
+	margin: auto auto;
+	@include break(lg){
+	padding: 40px 60px;	
+	}
+	.gform_title{
+		font-size: 26px !important;
+		line-height: 34px;
+		text-align: center;
+		@include break(lg){
+		font-size: 30px !important;
+		line-height: 65px;
+		}
+	}
+	.step_label{
+		font-size: 18px;
+		font-weight: 300;
+	}
+	.gfield{
+		text-align: center;
+		margin: 0 !important;
+		.gfield_label{
+			font-size: 18px;
+			font-weight: 300;
+		}
+		.gfield_description{
+			color: #173686;
+			font-size: 13px;
+			margin-bottom: 1.5em;
+		}
+	
+		input[type="text"],
+		select{
+			    border: 1px solid #fff;
+			    background-color: #f2f2f2;
+			    color: #434343;
+			    width: 100% !important;
+			    text-align: left;
+				text-indent: 15px;
+				font-weight: 300;
+			    height: 50px;
+			    border-radius: 2px;
+			    transition: all 0.3s ease-in-out;
+			    outline: none !important;
+		    &:focus{
+			    border: 1px solid #00a853;
+				background-color: #ffffff;
+				font-weight: 300 !important;
+		    }
+		}
+	}
+	.gfield_checkbox,
+	.gfield_radio{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		li{
+			flex: 0 0 50%;
+			display: flex;
+			input{
+				display: none !important;
+				& + label{
+					border: 1.4px solid #04267a;
+				    //background-color: #F2F2F2;
+				    color: #434343;
+				    width: 100%;
+				    text-align: center;
+				    padding: 15px 5px;
+				    border-radius: 2px;
+				    transition: all 0.1s ease-in-out;
+				}
+				&:hover + label{
+					//border: 1px solid #00a853;
+					background-color: #edf7ff;
+					font-weight: 300 !important;
+				}
+				&:checked + label{
+					border: 1.4px solid #00a853;
+					background-color: #edf7ff;
+					font-weight: 300 !important;
+				}
+			}
+		}
+		.gchoice_6_1_7{
+			flex: 0 0 109%;
+			label{
+				margin: 0 !important;
+			    position: relative;
+			    //left: -16px;
+			}
+		}
+	}
+	
+	.gform_page_footer{
+		text-align: right;
+		border: none !important;
+		.button{
+			@extend .btn;
+			@media only screen and (max-width: 640px){
+		    max-width: 40%;
+		    padding: 7px !important;
+			}
+		}
+		#gform_previous_button_6{
+			display: none;
+		}
+		.gform_previous_button{
+			background-color: #d0d0d0 !important;
+			background: none !important;
+		    color: #292929 !important;
+		    float: left;
+		    &:hover{
+				background-color: darken(#d0d0d0, $amount) !important;
+			    color: darken(#292929 , $amount) !important;
+		    }
+		}
+		.gform_next_button{
+			//float: right;			
+			@include break(d){
+				min-width: 200px;
+			}
+		}
+	}
+}
+
+div#gform_page_6_1 .gform_page_footer,
+div#gform_page_6_6 .gform_page_footer {
+    text-align: center !important;
+}
+
+#gform_next_button_6_4,
+#gform_previous_button_6_4,
+#gform_next_button_6_6,
+#gform_previous_button_6_6{
+   position:absolute;
+   visibility: hidden;
+}
+
+input#gform_submit_button_6 {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+
+/* Progress Bar */
+
+.gf_progressbar_wrapper .gf_progressbar_title {
+  display: none; }
+
+.gf_progressbar_wrapper .gf_progressbar {
+	max-width: 340px;
+	margin: auto;
+	background-color: #edf7ff !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	padding: 0 !important;
+	border-radius: 0 !important;
+	box-shadow: none; 
+  }
+  .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage {
+    background-color: #173686 !important;
+    border-radius: 0;
+    background: none;
+    height: 9px; 
+    }
+	.gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage span {
+      display: none; 
+    }
+  .gf_progressbar_wrapper .gf_progressbar:after {
+    border-radius: 0 !important;
+    background-color: white;
+    height: 0 !important;
+    margin-top: 0 !important; 
+    }
+
+/* Progress Bar Ends Here */
+
+body img.gform_ajax_spinner {
+ position: absolute;
+}

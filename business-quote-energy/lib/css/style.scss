@@ -1,0 +1,323 @@
+// Required
+@import "../bootstrap/scss/functions";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+// Optional
+@import "../bootstrap/scss/reboot";
+@import "../bootstrap/scss/type";
+@import "../bootstrap/scss/images";
+@import "../bootstrap/scss/code";
+@import "../bootstrap/scss/grid";
+//@import "../bootstrap/scss/_nav";
+//@import "../bootstrap/scss/_transitions";
+@import "../bootstrap/scss/_forms";
+@import "../bootstrap/scss/utilities/_spacing";
+@import "../bootstrap/scss/utilities/_text";
+@import "../bootstrap/scss/utilities/_display";
+@import "../bootstrap/scss/utilities/_background";
+//@import "../bootstrap/scss/_input-group";
+
+$blue: #132246;
+$orange: #ff5f08;
+$amount: 10%;
+
+@mixin break($point) {
+  @if $point == sm {
+    @media only screen and (min-width: 567px) {
+      @content;
+    }
+  } @else if $point == md {
+    @media only screen and (min-width: 768px) {
+      @content;
+    }
+  } @else if $point == lg {
+    @media only screen and (min-width: 992px) {
+      @content;
+    }
+  } @else if $point == xl {
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
+  }
+}
+
+@import "form";
+@import "_select-css.css";
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  color: $blue;
+}
+
+body,
+h1,
+h2,
+h3,
+h4 {
+  font-family: "sofia-pro", sans-serif;
+}
+
+h1 {
+  font-size: 34px;
+  line-height: 42px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  padding-bottom: 1em;
+  font-size: 30px;
+  line-height: 1.2em;
+}
+
+section {
+  padding: 3em 0;
+  @include break(md) {
+    padding: 4% 0;
+  }
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+  @include break(md) {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+
+/* Classes */
+
+.font-20 {
+  font-size: 20px;
+}
+
+.bg-light-blue {
+  background-color: #f5f7fd;
+}
+
+.highlight {
+  color: $orange;
+}
+
+.width-600 {
+  max-width: 600px;
+  margin: auto auto;
+}
+
+.pl-80 {
+  padding-left: 80px;
+}
+
+.p-40-round {
+  padding: 20px 0;
+  margin: 1em 0;
+  @include break(md) {
+    padding: 25px 20px;
+    margin: 1em;
+  }
+  border-radius: 5px;
+  border: 1px solid $blue;
+}
+/* Classes */
+
+/* Elements */
+
+.button_wrapper {
+  padding: 40px 0;
+  text-align: center;
+  @include break(md) {
+    text-align: unset;
+  }
+}
+
+.button {
+  background-color: $orange;
+  padding: 15px 40px;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    color: #fff;
+    background-color: darken($orange, $amount);
+    text-decoration: none;
+  }
+}
+
+.blurb {
+  text-align: center;
+  &-img-top {
+    max-width: 240px;
+  }
+  &-title {
+    color: $orange;
+  }
+}
+/* Elements Ends Here */
+
+.slider {
+  padding: 40px 0;
+  /* the slides */
+  .slick-slide {
+    margin: 0 20px;
+  }
+  /* the parent */
+  .slick-list {
+    margin: 0 -20px;
+  }
+}
+
+.usp-top {
+  background-color: #f5f7fd;
+  padding: 30px 0 20px;
+  &__item {
+    display: flex;
+    flex-direction: row;
+    //flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 0.9em;
+    justify-content: center;
+    text-align: center;
+    @include break(md) {
+      flex-direction: column;
+    }
+    @include break(xl) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    img {
+      margin-right: 3px;
+      max-width: 18px;
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.usp {
+  padding-left: 0;
+  li {
+    list-style-type: none;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    &:before {
+      content: "";
+      background-image: url("/EnergySavingCompare/assets/images/tick.svg");
+      position: absolute;
+      background-size: 20px 20px;
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 20px;
+      left: 0;
+      margin-top: 3px;
+    }
+  }
+}
+
+.bullets {
+  @extend .usp;
+  li {
+    padding-left: 20px;
+    &:before {
+      display: none;
+      @include break(md) {
+        display: block;
+      }
+      left: 75px;
+    }
+  }
+}
+
+/* Sections */
+
+.hero {
+  background-color: #f5f7fd;
+  padding: 2% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  @include break(xl) {
+    background-image: url("/EnergySavingCompare/assets/images/esc-bgr.jpg");
+  }
+  .subhead {
+    color: $orange;
+  }
+}
+.why-section {
+  text-align: center;
+  @include break(md) {
+    text-align: left;
+  }
+  @include break(md) {
+    background-image: url("/EnergySavingCompare/assets/images/energy-img-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  &_bg {
+    background-color: #fff;
+    padding: 3em 0;
+    @include break(md) {
+      padding: 80px 0 80px 80px;
+    }
+  }
+}
+/* Sections Ends Here */
+
+footer {
+  background-color: $blue;
+  color: #fff;
+  padding: 40px 0;
+  @include break(md) {
+    padding: 4% 0;
+  }
+  h6 {
+    color: $orange;
+  }
+  a {
+    color: #fff;
+    &:hover {
+      color: #fff;
+    }
+  }
+  .row > div {
+    padding-bottom: 20px;
+  }
+  .footer_bottom {
+    color: #8497c5;
+    font-size: 12px;
+    line-height: 1.7em;
+    max-width: 700px;
+    margin: auto;
+    @include break(md) {
+      padding: 60px 0 40px;
+    }
+  }
+}
+
+/* Animation Shake */
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}

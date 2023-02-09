@@ -1,0 +1,8 @@
+.field_setting .wp-picker-holder,
+.field_setting .wp-picker-holder *{
+	box-sizing:unset !important;
+}
+.field_setting .wp-picker-input-wrap label{
+	margin: 0 !important;
+	display: inline-block !important;
+}
