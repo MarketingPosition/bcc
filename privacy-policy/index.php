@@ -30,7 +30,7 @@ include $root . "/_header.php";
       <div class="container h-100">
         <div class="row no-gutters">
           <div class="hero__title">
-            <h1>Website Privacy Policy</h1>
+            <h1>Website Privacy Policy test</h1>
           </div>
         </div>
       </div>
