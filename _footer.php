@@ -17,7 +17,7 @@
               Metro House,<br>
               Marconi Way,<br>
               Gateshead NE11 9NH</p>
-            <p class="mb-0"><span class="text-green">Phone:</span> <a href="tel:03300589414">03300 589 414</a></p>
+            <p class="mb-0"><span class="text-green">Phone:</span> <a href="tel:03303907540">0330 3907540</a></p>
             <p><span class="text-green">Email:</span> <a href="mailto:info@businesscostcomparison.co.uk">info@businesscostcomparison.co.uk</a></p>
           </div>
         </div>
@@ -55,7 +55,7 @@
       <div class="row">
         <div class="col col-lg-8 mx-auto text-lg-center">
           <div class="footer__item">
-            <p>&copy; <?php echo date("Y"); ?> Marketing Position Ltd.</p>
+            <p>&copy; <?php echo date("Y"); ?> BETTER SOLUTIONS GROUP LIMITED.</p>
             <p class="mb-0">You can change your mind at any time but, for now, we will assume you are happy for us to store and access cookies on your device for the purposes described. <a href="<?php echo $domain; ?>/cookies/">Cookie Policy</a> / <a href="<?php echo $domain; ?>/privacy-policy/">Read Policy & T&C's</a></p>
           </div>
         </div>
