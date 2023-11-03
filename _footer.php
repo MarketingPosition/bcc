@@ -11,10 +11,12 @@
         <div class="col-lg-3 offset-lg-1 col-xs-12">
           <div class="footer__item">
             <h6>Get in touch</h6>
-            <p>Business Cost Comparison<br>
-              Northern Design Centre,<br>
-              Abbott's Hill,<br>
-              Gateshead NE11 3DFas</p>
+
+
+            <p>BETTER SOLUTIONS GROUP LIMITED<br>
+              Metro House,<br>
+              Marconi Way,<br>
+              Gateshead NE11 9NH</p>
             <p class="mb-0"><span class="text-green">Phone:</span> <a href="tel:03300589414">03300 589 414</a></p>
             <p><span class="text-green">Email:</span> <a href="mailto:info@businesscostcomparison.co.uk">info@businesscostcomparison.co.uk</a></p>
           </div>
