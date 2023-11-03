@@ -30,7 +30,7 @@ include $root . "/_header.php";
       <div class="container h-100">
         <div class="row no-gutters">
           <div class="hero__title">
-            <h1>Website Privacy Policy test</h1>
+            <h1>Website Privacy Policy </h1>
           </div>
         </div>
       </div>
@@ -47,11 +47,11 @@ include $root . "/_header.php";
               <p><span style="font-weight: 400;">We have appointed a Data Protection Officer who is in charge of privacy related matters for us. If you have any questions about this privacy notice, please contact the Data Protection Officer using the details set out below. </span></p>
               <p><b>Contact Details</b></p>
               <p><span style="font-weight: 400;">Our full details are:</span></p>
-              <p><span style="font-weight: 400;">Full name of legal entity: <strong>Marketing Position Ltd T/A&nbsp;</strong></span><strong>Business Cost Comparison</strong></p>
-              <p>Company Number:&nbsp;<span style="color: #000000;"><strong>11094169&nbsp;</strong></span></p>
+              <p><span style="font-weight: 400;">Full name of legal entity: <strong>BETTER SOLUTIONS GROUP LIMITED T/A&nbsp;</strong></span><strong>Business Cost Comparison</strong></p>
+              <p>Company Number:&nbsp;<span style="color: #000000;"><strong>13536124&nbsp;</strong></span></p>
               <p><span style="font-weight: 400;">Steven Fee – Data Protection Officer</span></p>
-              <p><span style="font-weight: 400;">Email address: </span><b>info@businesscostcomparison.co.uk</b>&nbsp;</p>
-              <p><span style="font-weight: 400;">It is very important that the information we hold about you is accurate and up to date. Please let us know if at any time your personal information changes by emailing us at </span><b><a href="mailto:info@businesscostcomparison.co.uk">info@businesscostcomparison.co.uk</a></b></p>
+              <p><span style="font-weight: 400;">Email address: </span><b>info@bettersolutionsgroup.co.uk</b>&nbsp;</p>
+              <p><span style="font-weight: 400;">It is very important that the information we hold about you is accurate and up to date. Please let us know if at any time your personal information changes by emailing us at </span><b><a href="mailto:info@bettersolutionsgroup.co.uk">info@bettersolutionsgroup.co.uk</a></b></p>
             </div>
           </div>
           <div class="col-12 col-lg-6">
@@ -193,7 +193,8 @@ include $root . "/_header.php";
 
           Before we share your personal data with any third party for their own marketing purposes we will get your express consent.
 
-          You can ask us or third parties to stop sending you marketing messages at any time by following the opt-out links on any marketing message sent to you or OR by emailing us at info@businesscostcomparison.co.uk at any time.
+          You can ask us or third parties to stop sending you marketing messages at any time by following the opt-out links on any marketing message sent to you or OR by emailing us at info@bettersolutionsgroup.co.uk
+           at any time.
 
           If you opt out of receiving marketing communications this opt-out does not apply to personal data provided as a result of other transactions, such as purchases, warranty registrations etc.
 
