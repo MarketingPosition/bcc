@@ -10,7 +10,11 @@
   <link rel="icon" href="<?php echo $domain; ?>/assets/images/icon.png" sizes="192x192" />
   <link rel="apple-touch-icon-precomposed" href="<?php echo $domain; ?>/assets/images/icon.png" />
   <meta name="msapplication-TileImage" content="<?php echo $domain; ?>/assets/images/icon.png" />
-
+  <!-- clearing site cache -->
+  <meta http-equiv='cache-control' content='no-cache'> 
+<meta http-equiv='expires' content='0'> 
+<meta http-equiv='pragma' content='no-cache'>
+ <!-- clearing site cache -->
   <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Work+Sans:wght@500;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="<?php echo $domain; ?>/assets/css/style.css">
