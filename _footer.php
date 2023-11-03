@@ -14,7 +14,7 @@
             <p>Business Cost Comparison<br>
               Northern Design Centre,<br>
               Abbott's Hill,<br>
-              Gateshead NE8 3DF</p>
+              Gateshead NE11 3DF</p>
             <p class="mb-0"><span class="text-green">Phone:</span> <a href="tel:03300589414">03300 589 414</a></p>
             <p><span class="text-green">Email:</span> <a href="mailto:info@businesscostcomparison.co.uk">info@businesscostcomparison.co.uk</a></p>
           </div>
