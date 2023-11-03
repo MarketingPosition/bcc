@@ -4,13 +4,20 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
+
+<!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11398725463"></script>
+ <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', 
+ new Date()); gtag('config', 'AW-11398725463'); </script>
+
+<!-- Google tag (gtag.js) ends here -->
+
   <title><?php echo $page_name; ?></title>
 
   <link rel="icon" href="<?php echo $domain; ?>/assets/images/icon-150x150.png" sizes="32x32" />
   <link rel="icon" href="<?php echo $domain; ?>/assets/images/icon.png" sizes="192x192" />
   <link rel="apple-touch-icon-precomposed" href="<?php echo $domain; ?>/assets/images/icon.png" />
   <meta name="msapplication-TileImage" content="<?php echo $domain; ?>/assets/images/icon.png" />
-
+  
   <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Work+Sans:wght@500;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="<?php echo $domain; ?>/assets/css/style.css">
